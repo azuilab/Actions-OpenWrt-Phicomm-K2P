@@ -16,7 +16,7 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: true
+        required: false
         default: 'false'
   schedule:
     - cron: 0 8 * * 5
@@ -24,7 +24,7 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/azuilab/My_lede
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
